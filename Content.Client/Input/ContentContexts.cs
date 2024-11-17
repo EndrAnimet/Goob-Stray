@@ -97,6 +97,7 @@ namespace Content.Client.Input
             human.AddFunction(ContentKeyFunctions.TargetRightLeg);
             human.AddFunction(ContentKeyFunctions.TargetRightFoot);
             // Shitmed Change End
+            human.AddFunction(ContentKeyFunctions.ToggleCrawling); // NES14-Changes, crawling
 
             // actions should be common (for ghosts, mobs, etc)
             common.AddFunction(ContentKeyFunctions.OpenActionsMenu);

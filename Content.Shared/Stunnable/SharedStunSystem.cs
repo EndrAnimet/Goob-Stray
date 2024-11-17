@@ -165,7 +165,7 @@ public abstract class SharedStunSystem : EntitySystem
             return;
         }
 
-        _standingState.Stand(uid, standing);
+        // _standingState.Stand(uid); //NES14-Changes, Crawling
         // WD EDIT END
     }
 

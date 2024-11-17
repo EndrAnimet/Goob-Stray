@@ -73,6 +73,7 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction TargetRightLeg = "TargetRightLeg";
         public static readonly BoundKeyFunction TargetRightFoot = "TargetRightFoot";
         // Shitmed Change End
+        public static readonly BoundKeyFunction ToggleCrawling = "ToggleCrawling"; // NES14-Changes, crawling
 
         public static readonly BoundKeyFunction ArcadeUp = "ArcadeUp";
         public static readonly BoundKeyFunction ArcadeDown = "ArcadeDown";
