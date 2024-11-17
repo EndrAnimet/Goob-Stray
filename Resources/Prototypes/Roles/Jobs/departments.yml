@@ -148,3 +148,4 @@
   - Zookeeper
   - Psychologist
   primary: false
+  editorHidden: true

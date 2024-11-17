@@ -5,6 +5,7 @@
   playTimeTracker: JobClown
   startingGear: ClownGear
   icon: "JobIconClown"
+  setPreference: false
   supervisors: job-supervisors-hop
   access:
   - Theatre

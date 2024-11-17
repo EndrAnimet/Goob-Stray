@@ -5,6 +5,7 @@
   playTimeTracker: JobMime
   startingGear: MimeGear
   icon: "JobIconMime"
+  setPreference: false
   supervisors: job-supervisors-hop
   access:
   - Theatre

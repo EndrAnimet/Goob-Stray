@@ -5,6 +5,7 @@
   playTimeTracker: JobPassenger
   startingGear: PassengerGear
   icon: "JobIconPassenger"
+  setPreference: false
   supervisors: job-supervisors-everyone
   access:
   - Maintenance

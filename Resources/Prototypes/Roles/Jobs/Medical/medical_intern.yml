@@ -10,6 +10,7 @@
       inverted: true # stop playing intern if you're good at med!
   startingGear: MedicalInternGear
   icon: "JobIconMedicalIntern"
+  setPreference: false
   supervisors: job-supervisors-medicine
   access:
   - Medical
