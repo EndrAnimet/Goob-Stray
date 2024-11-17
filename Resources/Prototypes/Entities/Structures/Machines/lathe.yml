@@ -1428,6 +1428,7 @@
       - IngotSilver1
       - MaterialBananium1
       - MaterialDiamond
+      - Nes14Sheetcopper
 
 - type: entity
   parent: BaseLathe

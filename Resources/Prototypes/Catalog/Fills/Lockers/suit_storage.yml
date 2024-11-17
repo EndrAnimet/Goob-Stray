@@ -119,7 +119,8 @@
         - id: OxygenTankFilled
         - id: NitrogenTankFilled
         - id: ClothingShoesBootsMag
-        - id: ClothingOuterHardsuitEngineering
+        - id: Nes14ClothingOuterHardsuitEngineer
+        - id: Nes14ClothingHeadHelmetHardsuitEngi
         - id: ClothingMaskBreath
   - type: AccessReader
     access: [["Engineering"]]
@@ -247,6 +248,8 @@
       - id: ClothingShoesBootsMag
       - id: ClothingOuterHardsuitSalvage #Goobstation
       - id: ClothingMaskGasExplorer
+      - id: Nes14ClothingOuterHardsuitSalvage
+      - id: Nes14ClothingHeadHelmetHardsuitSalvage
   - type: AccessReader
     access: [["Salvage"]]
 

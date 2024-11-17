@@ -29,9 +29,9 @@
   description: Standard security gear. Protects the head from impacts.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Helmets/security.rsi
+    sprite: NES/Clothing/Head/Helmets/security.rsi #NES14-Changes
   - type: Clothing
-    sprite: Clothing/Head/Helmets/security.rsi
+    sprite: NES/Clothing/Head/Helmets/security.rsi #NES14-Changes
   - type: Tag
     tags:
     - WhitelistChameleon
