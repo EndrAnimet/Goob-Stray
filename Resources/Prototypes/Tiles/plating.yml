@@ -1,12 +1,10 @@
-- type: tile
+﻿- type: tile
   id: Plating
   name: tiles-plating
-  sprite: /Textures/Tiles/plating.png
+  sprite: /Textures/NES/Tiles/plating.png #NES14-Changes
   baseTurf: Lattice
   isSubfloor: true
-  # Goobstation - Fireaxe plating prying
-  deconstructTools: [ Axing ]
-  deconstructTimeMultiplier: 5 # Goobstation
+  deconstructTools: [ Axing ] # DeltaV - The return of fireaxe prying
   footstepSounds:
     collection: FootstepPlating
   friction: 0.3
@@ -23,9 +21,7 @@
   - 1.0
   baseTurf: Lattice
   isSubfloor: true
-  # Goobstation - Fireaxe plating prying
-  deconstructTools: [ Axing ]
-  deconstructTimeMultiplier: 5 # Goobstation
+  deconstructTools: [ Axing ] # DeltaV - The return of fireaxe prying
   footstepSounds:
     collection: FootstepPlating
   friction: 0.3
@@ -37,9 +33,7 @@
   sprite: /Textures/Tiles/plating_burnt.png
   baseTurf: Lattice
   isSubfloor: true
-  # Goobstation - Fireaxe plating prying
-  deconstructTools: [ Axing ]
-  deconstructTimeMultiplier: 5 # Goobstation
+  deconstructTools: [ Axing ] # DeltaV - The return of fireaxe prying
   footstepSounds:
     collection: FootstepPlating
   friction: 0.3
@@ -51,9 +45,7 @@
   sprite: /Textures/Tiles/Asteroid/asteroid_plating.png
   baseTurf: Lattice
   isSubfloor: true
-  # Goobstation - Fireaxe plating prying
-  deconstructTools: [ Axing ]
-  deconstructTimeMultiplier: 5 # Goobstation
+  deconstructTools: [ Axing ] # DeltaV - The return of fireaxe prying
   footstepSounds:
     collection: FootstepPlating
   friction: 0.3
@@ -65,9 +57,7 @@
   sprite: /Textures/Tiles/Misc/clockwork/clockwork_floor.png
   baseTurf: Lattice
   isSubfloor: true
-  # Goobstation - Fireaxe plating prying
-  deconstructTools: [ Axing ]
-  deconstructTimeMultiplier: 5 # Goobstation
+  deconstructTools: [ Axing ] # DeltaV - The return of fireaxe prying
   footstepSounds:
     collection: FootstepPlating
   friction: 0.3
@@ -79,9 +69,7 @@
   sprite: /Textures/Tiles/snow_plating.png #Not in the snow planet RSI because it doesn't have any metadata. Should probably be moved to its own folder later.
   baseTurf: Lattice
   isSubfloor: true
-  # Goobstation - Fireaxe plating prying
-  deconstructTools: [ Axing ]
-  deconstructTimeMultiplier: 5 # Goobstation
+  deconstructTools: [ Axing ] # DeltaV - The return of fireaxe prying
   footstepSounds:
     collection: FootstepPlating
   friction: 0.15 #a little less then actual snow
@@ -90,11 +78,10 @@
 - type: tile
   id: Lattice
   name: tiles-lattice
-  sprite: /Textures/Tiles/lattice.png
+  sprite: /Textures/NES/Tiles/lattice.png #NES14-Changes
   baseTurf: Space
   isSubfloor: true
   deconstructTools: [ Cutting ]
-  deconstructTimeMultiplier: 1 # Goobstation
   weather: true
   footstepSounds:
     collection: FootstepPlating
@@ -110,7 +97,6 @@
   baseTurf: Space
   isSubfloor: true
   deconstructTools: [ Cutting ]
-  deconstructTimeMultiplier: 1 # Goobstation
   weather: true
   footstepSounds:
     collection: FootstepPlating
