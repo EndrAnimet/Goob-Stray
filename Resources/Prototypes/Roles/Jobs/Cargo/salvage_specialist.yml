@@ -24,6 +24,8 @@
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
     id: SalvagePDA
     ears: ClothingHeadsetCargo
+    head: Nes14ClothingHeadHatSalvagerRadio
+    belt: ClothingBeltSalvageWebbing
   #storage:
     #back:
     #- Stuff
