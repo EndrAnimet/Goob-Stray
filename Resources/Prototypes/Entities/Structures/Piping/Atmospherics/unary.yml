@@ -41,7 +41,7 @@
       sprite: Structures/Piping/Atmospherics/vent.rsi
       noRot: true
       layers:
-        - sprite: Structures/Piping/Atmospherics/pipe.rsi
+        - sprite: NES/Structures/Piping/Atmospherics/pipe.rsi #NES14-Changes
           state: pipeHalf
           map: [ "enum.PipeVisualLayers.Pipe" ]
         - state: vent_off
@@ -85,7 +85,7 @@
       sprite: Structures/Piping/Atmospherics/vent.rsi
       noRot: true
       layers:
-        - sprite: Structures/Piping/Atmospherics/pipe.rsi
+        - sprite: NES/Structures/Piping/Atmospherics/pipe.rsi #NES14-Changes
           state: pipeHalf
           map: [ "enum.PipeVisualLayers.Pipe" ]
         - state: vent_passive
@@ -120,7 +120,7 @@
       sprite: Structures/Piping/Atmospherics/scrubber.rsi
       noRot: true
       layers:
-        - sprite: Structures/Piping/Atmospherics/pipe.rsi
+        - sprite: NES/Structures/Piping/Atmospherics/pipe.rsi #NES14-Changes
           state: pipeHalf
           map: [ "enum.PipeVisualLayers.Pipe" ]
         - state: scrub_off
@@ -164,7 +164,7 @@
       sprite: Structures/Piping/Atmospherics/outletinjector.rsi
       layers:
         - state: pipeHalf
-          sprite: Structures/Piping/Atmospherics/pipe.rsi
+          sprite: NES/Structures/Piping/Atmospherics/pipe.rsi #NES14-Changes
           map: [ "enum.PipeVisualLayers.Pipe" ]
         - state: injector
           map: [ "enum.SubfloorLayers.FirstLayer" ]

@@ -10,24 +10,24 @@
 
 # Jumpsuit
 - type: loadout
-  id: CaptainJumpsuit
+  id: CaptainJumpsuit Nes14ClothingUniformAdminAlt
   equipment:
-    jumpsuit: ClothingUniformJumpsuitCaptain
+    jumpsuit: Nes14ClothingUniformAdmin
 
 - type: loadout
   id: CaptainJumpskirt
   equipment:
-    jumpsuit: ClothingUniformJumpskirtCaptain
+    jumpsuit: Nes14ClothingUniformAdminAlt
 
 - type: loadout
   id: CaptainFormalSuit
   equipment:
-    jumpsuit: ClothingUniformJumpsuitCapFormal
+    jumpsuit: Nes14ClothingUniformAdminAltAlt
 
-- type: loadout
-  id: CaptainFormalSkirt
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtCapFormalDress
+# - type: loadout
+#   id: CaptainFormalSkirt
+#   equipment:
+#     jumpsuit: ClothingUniformJumpskirtCapFormalDress
 
 # Head
 - type: loadout

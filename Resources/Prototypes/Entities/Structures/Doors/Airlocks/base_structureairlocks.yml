@@ -138,7 +138,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 500
+        damage: 350
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -146,6 +146,11 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalSlam
+      - !type:SpawnEntitiesBehavior
+              spawn:
+                AirlockAssembly:
+                  min: 1
+                  max: 1
   - type: Construction
     graph: Airlock
     node: airlock

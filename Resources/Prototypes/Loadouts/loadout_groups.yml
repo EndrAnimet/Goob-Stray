@@ -102,10 +102,18 @@
   name: loadout-group-captain-jumpsuit
   loadouts:
   - CaptainJumpsuit
-  # - CaptainJumpskirt
+  - CaptainJumpskirt
   - CaptainFormalSuit
   - CaptainFormalSkirt
   - CaptainJumpsuitTurtleneck
+
+- type: loadoutGroup
+  id: CaptainPants
+  name: Капитан, штаны
+  loadouts:
+  - CaptainPants
+  - CaptainPantsAlt
+  - CaptainSkirt
 
 - type: loadoutGroup
   id: CaptainNeck
@@ -149,6 +157,13 @@
   - HoPMessSkirt # DeltaV
   - HoPMessSuit # DeltaV
   - HoPBoatswain # DeltaV
+  - HoPJumpsuitAlt
+
+- type: loadoutGroup
+  id: HoPPants
+  name: Глава персонала, штаны
+  loadouts:
+  - HoPPants
 
 - type: loadoutGroup
   id: HoPNeck
@@ -180,9 +195,21 @@
   name: loadout-group-passenger-jumpsuit
   loadouts:
   - GreyJumpsuit
-  - GreyJumpskirt
-  - AncientJumpsuit
-  - RainbowJumpsuit
+# - GreyJumpskirt
+# - AncientJumpsuit
+# - RainbowJumpsuit
+  - WhiteJumpsuit
+  - WhiteJumpskirt
+  - BlackJumpsuit
+  - BlackJumpskirt
+  - MioSkirt # Start DeltaV Changes
+  - NaotaHoodie
+  - CasualBlueSkirt
+  - CasualBlueSuit
+  - CasualRedSkirt
+  - CasualRedSuit
+  - CasualPurpleSkirt
+  - CasualPurpleSuit # End DeltaV Changes
 
 - type: loadoutGroup
   id: PassengerFace
