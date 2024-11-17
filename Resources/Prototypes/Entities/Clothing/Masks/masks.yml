@@ -125,9 +125,9 @@
   description: A military-grade gas mask that can be connected to an air supply.
   components:
   - type: Sprite
-    sprite: Clothing/Mask/gasexplorer.rsi
+    sprite: NES/Clothing/Mask/gasexplorer.rsi #NES14-Changes
   - type: Clothing
-    sprite: Clothing/Mask/gasexplorer.rsi
+    sprite: NES/Clothing/Mask/gasexplorer.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -186,9 +186,9 @@
   - type: Item
     size: Tiny
   - type: Sprite
-    sprite: Clothing/Mask/breath.rsi
+    sprite: NES/Clothing/Mask/breath.rsi #NES14-Changes
   - type: Clothing
-    sprite: Clothing/Mask/breath.rsi
+    sprite: NES/Clothing/Mask/breath.rsi
   - type: BreathMask
   - type: IngestionBlocker
   - type: Tag

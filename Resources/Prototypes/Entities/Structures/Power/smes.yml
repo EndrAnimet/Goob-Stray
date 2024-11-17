@@ -14,7 +14,7 @@
       sound:
         path: /Audio/Ambience/Objects/periodic_beep.ogg
     - type: Sprite
-      sprite: Structures/Power/smes.rsi
+      sprite: NES/Structures/Power/smes.rsi #NES14-Changes
       snapCardinals: true
       layers:
         - state: smes
@@ -25,16 +25,15 @@
         - map: ["enum.SmesVisualLayers.Input"]
           state: "smes-oc0"
           shader: unshaded
+          visible: false
         - map: ["enum.SmesVisualLayers.Output"]
           state: "smes-op1"
           shader: unshaded
-        - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
-          state: smes-open
     - type: Smes
     - type: Appearance
     - type: Battery
       startingCharge: 0
-      maxCharge: 16000000 # Goobstation - SMES buff
+      maxCharge: 8000000
     - type: ExaminableBattery
     - type: NodeContainer
       examinable: true
@@ -50,7 +49,7 @@
       sourceNode: input
       loadNode: output
       collectionName: smes
-      sprite: Structures/Power/smes.rsi
+      sprite: NES/Structures/Power/smes.rsi #NES14-Changes
       state: static
     - type: BatteryDischarger
       voltage: High
@@ -59,18 +58,16 @@
       voltage: High
       node: input
     - type: PowerNetworkBattery
-       # Goobstation - SMES buff
-      maxSupply: 300000
-      maxChargeRate: 10000
-      supplyRampTolerance: 10000
-      supplyRampRate: 2000
+      maxSupply: 1500000
+      maxChargeRate: 50000
+      supplyRampTolerance: 50000
+      supplyRampRate: 10000
     - type: PointLight
       radius: 1.5
       energy: 1.6
       color: "#c9c042"
       castShadows: false
     - type: WiresPanel
-    - type: WiresVisuals
     - type: Machine
       board: SMESMachineCircuitboard
     - type: StationInfiniteBatteryTarget
@@ -99,61 +96,15 @@
 - type: entity
   parent: BaseSMES
   id: SMESBasic
-  suffix: Basic, 8MJ
+  suffix: Basic, 8MW
   components:
   - type: Battery
-     # Goobstation - SMES buff
-    maxCharge: 16000000
-    startingCharge: 16000000
+    maxCharge: 80000000
+    startingCharge: 80000000
 
 - type: entity
   parent: SMESBasic
   id: SMESBasicEmpty
-  suffix: Empty
-  components:
-  - type: Battery
-    startingCharge: 0
-
-- type: entity
-  parent: BaseSMES
-  id: SMESAdvanced
-  suffix: Advanced, 16MJ
-  name: advanced SMES
-  description: An even-higher-capacity superconducting magnetic energy storage (SMES) unit.
-  components:
-  - type: Sprite
-    sprite: Structures/Power/smes.rsi
-    snapCardinals: true
-    layers:
-    - state: advancedsmes
-    - map: [ "enum.SmesVisualLayers.Charge" ]
-      state: "smes-og1" # -og0 does not exist
-      shader: unshaded
-      visible: false
-    - map: [ "enum.SmesVisualLayers.Input" ]
-      state: "smes-oc0"
-      shader: unshaded
-    - map: [ "enum.SmesVisualLayers.Output" ]
-      state: "smes-op1"
-      shader: unshaded
-    - map: ["enum.WiresVisualLayers.MaintenancePanel"]
-      state: advancedsmes-open
-  - type: Machine
-    board: SMESAdvancedMachineCircuitboard
-  - type: Battery
-    maxCharge: 16000000
-    startingCharge: 16000000
-  - type: PowerMonitoringDevice
-    group: SMES
-    sourceNode: input
-    loadNode: output
-    collectionName: smes
-    sprite: Structures/Power/smes.rsi
-    state: advancedsmes-static
-
-- type: entity
-  parent: SMESAdvanced
-  id: SMESAdvancedEmpty
   suffix: Empty
   components:
   - type: Battery
