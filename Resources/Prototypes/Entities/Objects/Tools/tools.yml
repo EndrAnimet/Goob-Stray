@@ -37,25 +37,13 @@
   - type: Item
     sprite: Objects/Tools/wirecutters.rsi
     storedRotation: -90
+    size: Small
   - type: ToolTileCompatible
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
   - type: StaticPrice
     price: 30
-  - type: Retractor # Shitmed
-    speed: 0.35
-  - type: Hemostat # Shitmed
-    speed: 0.6
-  - type: SurgeryTool # Shitmed
-    startSound:
-      path: /Audio/Items/wirecutter.ogg
-      params:
-        variation: 0.125
-    endSound:
-      path: /Audio/Items/wirecutter.ogg
-      params:
-        variation: 0.125
 
 - type: entity
   name: screwdriver
@@ -78,6 +66,7 @@
   - type: Item
     sprite: Objects/Tools/screwdriver.rsi
     storedRotation: -90
+    size: Small
   - type: MeleeWeapon
     wideAnimationRotation: -90
     attackRate: 1
@@ -100,15 +89,6 @@
       Steel: 100
   - type: StaticPrice
     price: 30
-  - type: Retractor # Shitmed
-    speed: 0.45
-  - type: Tending # Shitmed
-    speed: 0.65
-  - type: SurgeryTool # Shitmed
-    startSound:
-      collection: Screwdriver
-    endSound:
-      path: /Audio/_Shitmed/Medical/Surgery/retractor2.ogg
 
 - type: entity
   name: wrench
@@ -123,12 +103,12 @@
     tags:
     - Wrench
   - type: Sprite
-    sprite: Objects/Tools/wrench.rsi
+    sprite: NES/Objects/Tools/wrench.rsi #NES14-Changes
     state: icon
   - type: Item
-    sprite: Objects/Tools/wrench.rsi
+    sprite: NES/Objects/Tools/wrench.rsi #NES14-Changes
     storedSprite:
-      sprite: Objects/Tools/wrench.rsi
+      sprite: NES/Objects/Tools/wrench.rsi #NES14-Changes
       state: storage
   - type: MeleeWeapon
     wideAnimationRotation: 135
@@ -247,10 +227,6 @@
     - type: GuideHelp
       guides:
       - NetworkConfigurator
-    - type: PhysicalComposition #Goobstation - Recycle update
-      materialComposition:
-        Steel: 25
-        Plastic: 25
 
 #Power tools
 #Later on these should switch probably switch damage when changing the tool behavior.
@@ -297,6 +273,8 @@
     materialComposition:
       Steel: 300
       Plastic: 100
+#  - type: DynamicPrice
+#    price: 100
   - type: StaticPrice
     price: 100
   - type: MeleeWeapon
@@ -364,41 +342,6 @@
     key: enum.RcdUiKey.Key
 
 - type: entity
-  id: RPD
-  parent: RCD
-  name: RPD
-  description: A device used to rapidly pipe things.
-  components:
-  - type: RCD
-    isRpd: true
-    availablePrototypes:
-    - PipeFourway
-    - PipeStraight
-    - PipeBend
-    - PipeTJunction
-    - OutletInjector
-    - ManualValve
-    - VolumetricPump
-    - PressurePump
-    - VentScrubber
-    - PressureValve
-    - DualPortVent
-    - VentGas
-    - VentPassive
-    - MixerGas
-    - Radiator
-    - SignalValve
-    - CanisterPort
-    - FilterGas
-    - Deconstruct
-  - type: LimitedCharges
-    maxCharges: 45
-    charges: 45
-  - type: Sprite
-    sprite: Objects/Tools/rpd.rsi
-
-
-- type: entity
   id: RCDEmpty
   parent: RCD
   suffix: Empty
@@ -442,12 +385,19 @@
   - type: Item
     sprite: Objects/Tools/rcd.rsi
     heldPrefix: ammo
+    size: Small
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
       Plastic: 100
   - type: StaticPrice
     price: 60
+#  - type: DynamicPrice
+#    price: 60
+  - type: ReverseEngineering # Nyano
+    difficulty: 3
+    recipes:
+      - RCDAmmo
 
 - type: entity
   name: omnitool
@@ -466,8 +416,6 @@
     - Multitool
   - type: Prying
     enabled: false
-  - type: UseDelay # Goobstation - For insta prying
-    delay: 1
   - type: Tool
     qualities:
       - Screwing
