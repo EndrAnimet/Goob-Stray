@@ -42,13 +42,13 @@
   id: External
   iconPriority: 70
   stylePaths:
-    external:    Structures/Doors/Airlocks/Standard/external.rsi
+    external:    NES/Structures/Doors/Airlocks/Standard/external.rsi #NES14-Changes
 
 - type: AirlockGroup
   id: ExternalGlass
   iconPriority: 60
   stylePaths:
-    external:    Structures/Doors/Airlocks/Glass/external.rsi
+    external:    NES/Structures/Doors/Airlocks/Glass/external.rsi #NES14-Changes
 
 - type: AirlockGroup
   id: Shuttle
