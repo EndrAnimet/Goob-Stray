@@ -95,6 +95,9 @@
             "name": "cargo_dock"
         },
         {
+            "name": "cans_sci"
+        },
+        {
             "name": "chapel"
         },
         {
@@ -361,9 +364,6 @@
         },
         {
             "name": "cans"
-        },
-        {
-            "name": "cans_sci"
         },
         {
             "name": "shock"

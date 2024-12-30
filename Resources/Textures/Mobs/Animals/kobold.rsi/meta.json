@@ -5,14 +5,11 @@
     "y": 32
   },
   "license": "CC-BY-SA-3.0",
-  "copyright": "Drawn by Ubaser, modified by Bhijn and Myr, parts splitted up by Roudenn (GitHub)",
+  "copyright": "Drawn by Ubaser, modified by Bhijn and Myr",
   "states": [
     {
       "name": "kobold",
       "directions": 4
-    },
-    {
-      "name": "full"
     },
     {
       "name": "head_f",
@@ -63,15 +60,7 @@
       "directions": 4
     },
     {
-      "name": "tail",
-      "directions": 4
-    },
-    {
       "name": "eyes",
-      "directions": 4
-    },
-    {
-      "name": "innerline",
       "directions": 4
     },
     {

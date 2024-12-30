@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Created by discord:IAmRasputin#5242. Vox state by Flareguy for SS14",
+  "copyright": "Created by discord:IAmRasputin#5242 ; shadowkin by boctonskuitea",
   "size": {
     "x": 32,
     "y": 32
@@ -14,15 +14,15 @@
       "name": "icon-flash"
     },
     {
-      "name": "equipped-HELMET",
-      "directions": 4
-    },
-    {
-      "name": "equipped-HELMET-vox",
-      "directions": 4
-    },
-    {
       "name": "off-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "off-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "off-inhand-right",
       "directions": 4
     },
     {
@@ -30,11 +30,27 @@
       "directions": 4
     },
     {
-      "name": "off-equipped-HELMET-vox",
+      "name": "on-inhand-left",
       "directions": 4
     },
     {
-      "name": "on-equipped-HELMET-vox",
+      "name": "on-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "equipped-HELMET-vox",
+      "directions": 4
+    },
+    {
+      "name": "equipped-HELMET-vulpkanin",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET-shadowkin",
+      "directions": 4
+    },
+    {
+      "name": "off-equipped-HELMET-shadowkin",
       "directions": 4
     }
   ]

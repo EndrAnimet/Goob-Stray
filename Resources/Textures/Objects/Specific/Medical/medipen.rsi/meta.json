@@ -8,6 +8,12 @@
   },
   "states": [
     {
+      "name": "advcombatpen"
+    },
+    {
+      "name": "advcombatpen_empty"
+    },
+    {
       "name": "medipen"
     },
     {
@@ -96,12 +102,6 @@
     },
     {
       "name": "medipen-inhand-right"
-    },
-    {
-      "name": "advcombatpen"
-    },
-    {
-      "name": "advcombatpen_empty"
     },
     {
       "name": "punctpen"
